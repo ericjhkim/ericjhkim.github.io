@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="eric jihun kim">
+    <meta name="description" content="Personal profile for Eric Jihun Kim">
+
+	<title>Eric J. Kim</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="Assets/main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Heebo&display=swap" rel="stylesheet">
+
+	<link rel="preload" as="image" href="img/portrait.png">
+	<link rel="preload" as="image" href="img/portrait-colour.png">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<script src="Assets/main.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<script> 
+		$(function(){
+			$("#footer").load("Assets/footer.html"); 
+		});
+	</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DF6B8ZJSSX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DF6B8ZJSSX');
+	</script>
+
+</head>
+
+<body>
+	<div id="viewport">
+
+		<!-- Mobile topbar menu -->
+		<div id="mobilenav">
+			<div class="topbar">
+				<a href="#!" id="mobilenav-tog" onclick="openMobileNav()">
+					<img src="img/icon_hamburger.png" alt="">
+				</a>
+				<a href="#" id="logo">
+					<img src="img/mobilenavlogo.png" alt="">
+				</a>
+			</div>
+			<div id="shutter">
+				<a href="#about" onclick="openMobileNav()"><span class="num">01. </span>About</a>
+				<a href="#experience" onclick="openMobileNav()"><span class="num">02. </span>Experience</a>
+				<a href="#research" onclick="openMobileNav()"><span class="num">03. </span>Research</a>
+				<a href="#projects" onclick="openMobileNav()"><span class="num">04. </span>Projects</a>
+				<a href="#awards" onclick="openMobileNav()"><span class="num">05. </span>Awards</a>
+				<a href="#contact" onclick="openMobileNav()"><span class="num">06. </span>Contact</a>
+		  	</div>
+		</div>
+
+		<div id="content">
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<a href="index.html">
+					<div class="header m-2 d-flex align-items-center justify-content-center">
+						<h1>ejk</h1>
+					</div>
+				</a>
+				<div class="navbar-spacer"></div>
+				<hr>
+				<div class="menu-item">
+					<a href="#about">
+						<span class="num">01. </span>About
+					</a>
+				</div>
+				<hr>
+				<div class="menu-item">
+					<a href="#experience">
+						<span class="num">02. </span>Experience
+					</a>
+				</div>
+				<hr>
+				<div class="menu-item">
+					<a href="#research">
+						<span class="num">03. </span>Research
+					</a>
+				</div>
+				<hr>
+				<div class="menu-item">
+					<a href="#projects">
+						<span class="num">04. </span>Projects
+					</a>
+				</div>
+				<hr>
+				<div class="menu-item">
+					<a href="#awards">
+						<span class="num">05. </span>Awards
+					</a>
+				</div>
+				<hr>
+				<div class="menu-item">
+					<a href="#contact">
+						<span class="num">06. </span>Contact
+					</a>
+				</div>
+				<hr>
+				<div class="navbar-spacer2"></div>
+				<div class="icon-bar">
+					<a href="https://www.linkedin.com/in/eric-jihun-kim-220889213" target="_blank" rel="noopener noreferrer">
+						<img src="img/icon_linkedin.png" alt="linkedin" class="icon-socials">
+					</a>
+					<a href="https://www.researchgate.net/profile/Eric_Kim9" target="_blank" rel="noopener noreferrer">
+						<img src="img/icon_researchgate.png" alt="researchgate" class="icon-socials">
+					</a>
+					<a href="https://github.com/ericjhkim" target="_blank" rel="noopener noreferrer">
+						<img src="img/icon_github.png" alt="github" class="icon-socials">
+					</a>
+				</div>
+			</div>
+				
+			<section class="header-name d-flex align-items-center">
+				<div>
+					<div id="intro">Hi, my name is</div>
+					<div id="name">Eric Jihun Kim.</div>
+					<p id="blurb">I am an aerospace engineer and researcher specializing in autonomous systems.<br>
+						Currently, I am working as an aerospace engineer in the Royal Canadian Air Force.</p>
+				</div>
+			</section>
+
+			<section class="section" id="about">
+				<div class="row justify-content-center">
+					<div class="col-6 col-sm-4 col-xl-3 sec-title">
+						<h1><span class="num">01. </span>About</h1>
+					</div>
+					<div class="col-6 col-sm-8 col-xl-9">
+						<hr>
+					</div>
+				</div>
+				<div class="row justify-content-center g-5">
+					<div class="col-sm-7 col-lg-8 col-xl-9">
+						<p>I am an aerospace engineering officer in the RCAF as well as
+							an active researcher studying the design and implementation of autonomous flight systems for unmanned aerial vehicles.
+							<br><br>
+							My most recent work has been focused on the use of artificial neural networks in the trajectory planning and guidance schemes
+							of autopilot systems, which has been the work of my M.A.Sc. thesis, available below.
+							<br><br>
+							Some of the fields, disciplines, and tools with which I am familiar include:
+						</p>
+						<div class="row justify-content-center">
+							<div class="col-sm-6">
+								<ul>
+									<li>Optimization</li>
+									<li>Control systems</li>
+									<li>Reinforcement learning</li>
+									<li>Deep learning</li>
+								</ul>
+							</div>
+							<div class="col-sm-6">
+								<ul>
+									<li>Python</li>
+									<li>Matlab</li>
+									<li>C++</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 col-lg-4 col-xl-3 text-center">
+						<div class="myimg">
+							<img src="img/portrait.png" id="moi_png" align="middle" onmouseover="onHover('img/portrait-colour.png');" onmouseout="offHover('img/portrait.png');">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="experience">
+				<div class="row justify-content-center">
+					<div class="col-9 col-sm-6 col-xl-5 sec-title">
+						<h1><span class="num">02. </span>Experience</h1>
+					</div>
+					<div class="col-3 col-sm-6 col-xl-7">
+						<hr>
+					</div>
+				</div>
+				<div class="row justify-content-center g-5">
+					<div class="container">
+						<div class="timeline">
+							<ul>
+								<li>
+									<div class="timeline-content">
+										<h3 class="date"> November 2022 - June 2023</h3>
+										<h1>Aerospace Engineering Officer Basic Course</h1>
+										<h3>Royal Canadian Air Force</h3>
+										<p>Currently undergoing training as an aerospace engineering officer in the RCAF.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-content">
+										<h3 class="date"> September 2020 - May 2022</h3>
+										<h1>M.A.Sc. Aeronautical Engineering</h1>
+										<h3>Royal Military College of Canada</h3>
+										<p>Graduated with a M.A.Sc. in aeronautical engineering from RMC.
+											Primary research effort was centered around the application of artificial neural networks for the development
+											of autonomous flight.
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-content">
+										<h3 class="date">September 2016 - May 2020</h3>
+										<h1>B.Eng. Electrical Engineering</h1>
+										<h3>Royal Military College of Canada</h3>
+										<p>Attended RMC as an electrical engineering undergraduate.
+											Successfully graduated after completion of the four year program with a final year thesis on the development of
+											a multiple-input-multiple-output (MIMO) image transmission communications system using a software defined radio.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="research">
+				<div class="row justify-content-center">
+					<div class="col-8 col-sm-6 col-lg-5 col-xxl-4 sec-title">
+						<h1><span class="num">03. </span>Research</h1>
+					</div>
+					<div class="col-4 col-sm-6 col-lg-7 col-xxl-8">
+						<hr>
+					</div>
+				</div>
+				<div class="row justify-content-center g-5">
+					<div class="col-xl-6">
+						<h4>Publications</h4>
+						<div class="pub-item" onclick="displayAbstract(4)" tabindex="0">
+							Robust Neurocontrol for Autonomous Dynamic Soaring <br>
+							E. Kim, R. Perez <br>
+							AIAA JGCD, 2023
+							<a class=link href="https://arc.aiaa.org/doi/full/10.2514/1.G006803" target="_blank"> <img src="img/icon_link.png" alt="link"></a>
+						</div>
+						<div class="pub-item" onclick="displayAbstract(0)" tabindex="0">
+							Robust Neurocontrol for Autonomous Dynamic Soaring <br>
+							E. Kim, R. Perez <br>
+							AIAA SciTech, 2022
+							<a class=down href="public/STEC_22.pdf" target="_blank"> <img src="img/icon_download.png" alt="download"></a>
+							<a class=link href="https://arc.aiaa.org/doi/abs/10.2514/6.2022-1417" target="_blank"> <img class="me-2" src="img/icon_link.png" alt="link"></a>
+						</div>
+						<div class="pub-item" onclick="displayAbstract(1)" tabindex="1">
+							Neuroevolutionary Control for Autonomous Soaring <br>
+							E. Kim, R. Perez <br>
+							MDPI Aerospace, 2021
+							<a class=down href="public/MDPI_21.pdf" target="_blank"> <img src="img/icon_download.png" alt="download"></a>
+							<a class=link href="https://www.mdpi.com/2226-4310/8/9/267" target="_blank"> <img class="me-2" src="img/icon_link.png" alt="link"></a>
+						</div>
+						<div class="pub-item" onclick="displayAbstract(2)" tabindex="2">
+							Robust Neurocontrol for Autonomous Soaring <br>
+							E. Kim <br>
+							M.A.Sc. Thesis, 2022
+							<a class=down href="public/THESIS_MASc_22.pdf" target="_blank"> <img src="img/icon_download.png" alt="download"></a>
+							<a class=link href="https://espace.rmc.ca/jspui/handle/11264/342" target="_blank"> <img class="me-2" src="img/icon_link.png" alt="link"></a>
+						</div>
+						<div class="pub-item" onclick="displayAbstract(3)" tabindex="3">
+							Image Transmission Using an SDR Based MIMO System <br>
+							E. Kim, T. Jung <br>
+							B.Eng. Thesis, 2020
+							<a class=down href="/public/THESIS_BEng_20.pdf" target="_blank"> <img src="img/icon_download.png" alt="download"></a>
+						</div>
+					</div>
+					<div class="abstract col-xl-6" align="justify">
+						<h4>Abstract</h4>
+						<div id="abstract_txt"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="projects">
+				<div class="row justify-content-center">
+					<div class="col-8 col-sm-6 col-lg-5 col-xxl-4 sec-title">
+						<h1><span class="num">04. </span>Projects</h1>
+					</div>
+					<div class="col-4 col-sm-6 col-lg-7 col-xxl-8">
+						<hr>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 justify-content-center">
+					<div class="col project-tile">
+						<div class="card">
+							<div class="card-body">
+								<hr>
+								<h4 class="card-title text-center">Deep Learning Soaring</h4>
+								<img class="card-img" src="Projects/Previews/deeplearning.png" alt="cover_deeplearning">
+								<div class="card-text">
+									Implemented the proximal policy optimization (PPO) algorithm
+									to train a 3DOF flight model in simulation for autonomous dynamic soaring. <br>
+									<span class="aqua-brace">[</span>In progress<span class="aqua-brace">]</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col project-tile">
+						<div class="card">						
+							<div class="card-body">
+								<a href="https://github.com/ericjhkim/CartPole-RL" target="_blank">	
+									<hr>
+									<h4 class="card-title text-center">CartPole-RL</h4>
+									<img class="card-img" src="Projects/Previews/cartpolerl.png" alt="cover_cartpolerl">
+									<div class="card-text">
+										Implemented various reinforcement learning algorithms to train controllers for the balancing cart-pole problem.
+										Created simulation environment and visualizations from scratch.
+									</div>
+								</a>
+								<span class="gold-brace">[</span><span class="gold-brace"><a href="Projects/CartPole-RL/report.pdf" target="_blank">Report</a>]</span>
+							</div>
+						</div>
+					</div>
+					<div class="col project-tile">
+						<div class="card">
+							<div class="card-body">
+								<hr>
+								<h4 class="card-title text-center">Nano-Bot</h4>
+								<img class="card-img" src="Projects/Previews/selfbalancebot.png" alt="cover_selfbalancebot">
+								<div class="card-text">
+									Created a self-balancing pendulum robot
+									from scratch using an Arduino Nano. Sensors included wheel encoders and a 6DOF IMU,
+									with motors controlled through a PID loop.
+								</div>
+								<a href="https://github.com/ericjhkim/Nano-Bot" target="_blank" class="stretched-link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col project-tile">
+						<div class="card">
+							<div class="card-body">
+								<hr>
+								<h4 class="card-title text-center">MatFlightViz</h4>
+								<img class="card-img" src="Projects/Previews/flightsimvis.png" alt="cover_flightsimvis">
+								<div class="card-text">
+									Created a Matlab-based flight simulation animator for 3DOF flight model trajectories.
+									Takes 3D STL model and aircraft state trajectories and outputs animation in .gif or .avi format.
+								</div>
+								<a href="https://github.com/ericjhkim/MatFlightViz" target="_blank" class="stretched-link"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col project-tile">
+						<div class="card">
+							<div class="card-body">
+								<hr>
+								<h4 class="card-title text-center">Web Design</h4>
+								<img class="card-img" src="Projects/Previews/site1.png" alt="cover_site1">
+								<div class="card-text">
+									Designed website from scratch using HTML, CSS, and Javascript.
+									Used SQL to manage databases for commercial applications.
+								</div>
+								<a href="Projects/site1/site1.html" target="_blank" class="stretched-link"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="awards">
+				<div class="row justify-content-center">
+					<div class="col-6 col-sm-4 col-xxl-3 sec-title">
+						<h1><span class="num">05. </span>Awards</h1>
+					</div>
+					<div class="col-6 col-sm-8 col-xxl-9">
+						<hr>
+					</div>
+				</div>
+				<div class="awards row justify-content-center g-5">
+					<div class="col-md-12">
+						<ul>
+							<li>
+								RCAF Foundation Student Scholarship | RCAF Foundation | 2021/08
+								<div>Offered to post-secondary students in STEM areas of study who are
+									planning future careers in the fields of either Aviation or Aerospace.</div>
+							</li>
+							<hr>
+							<li>
+								Departmental Medal in Electrical Engineering | RMC | 2020/08
+								<div>Awarded to the graduating student standing highest in the programme,
+									providing an overall average of A- or better.</div>
+							</li>
+							<hr>
+							<li>
+								Ontario Professional Engineers Gold Medal for Academic Achievement | OPEF | 2020/08
+								<div>Awarded each year to the engineering student with the highest academic standing
+									in the final year.</div>
+							</li>
+							<hr>
+							<li>
+								Canadian Forces Engineering Prize - Silver Plate | RMC | 2020/08
+								<div>Awarded to the best graduating cadet enrolled in a military engineering occupation,
+									based on high standards of proficiency in each of the four pillars of the RMC programme.</div>
+							</li>
+							<hr>
+							<li>
+								Chikhani Award | RMC | 2020/08
+								<div>Awarded to the fourth year project group in electrical and computer engineering deemed
+									to have the best project by the members of the Electrical and Computer Engineering Department.</div>
+							</li>
+							<hr>
+							<li>
+								Ontario Professional Engineers Foundation for Education Undergraduate Scholarship | OPEF | 2019/09
+								<div>Awarded annually to full-time undergraduate students enrolled in CEAB-Accredited programs
+									in the Faculty of Engineering, recognizing outstanding students. Selection is based on academic achievement,
+									demonstrated leadership through participation in professional affairs, volunteer and/or
+									extracurricular activities.</div>
+							</li>
+							<hr>
+							<li>
+								Howard B. Ripstein Award of Excellence for Third Year | RMC | 2019/09
+								<div>Awarded to a cadet who has demonstrated excellence in all four pillars of the RMC programme.</div>
+							</li>
+							<hr>
+							<li>
+								Royal Military College of Canada Award For Academic Excellence in Third Year | RMC | 2019/09
+								<div>Awarded to the student who has obtained the highest academic standing in their year.</div>
+							</li>
+							<hr>
+							<li>
+								Ontario Professional Engineers Foundation for Education Undergraduate Scholarship | OPEF | 2018/09
+							</li>
+							<hr>
+							<li>
+								Royal Military College of Canada Award For Academic Excellence in Second Year | RMC | 2018/09
+							</li>
+							<hr>
+							<li>
+								Royal Military College of Canada Award For Academic Excellence in First Year | RMC | 2017/05
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="contact">
+				<div class="row justify-content-center">
+					<div class="col-7 col-sm-5 col-xxl-4 sec-title">
+						<h1><span class="num">06. </span>Contact</h1>
+					</div>
+					<div class="col-5 col-sm-7 col-xxl-8">
+						<hr>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-12 mb-4">
+						Feel free to reach out with any questions or requests.
+						You can <a href="mailto: ericjihkim@gmail.com" class="text-href">email me</a> directly or message me on social media.
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-12 col-xxl-8 text-center">
+						
+						<form id="contactform" class="row justify-content-center" action="includes/sendmsg.php" method="POST">
+		
+							<input type="hidden" name="_subject" value="New contact!">
+							<input type="hidden" name="_template" value="table">
+		
+							<!-- Name -->
+							<div class="input-div col-xl-6">
+								<input class="form-input" type="text" name="name" id="name" placeholder="Name" required>
+							</div>
+							<!-- Email -->
+							<div class="input-div col-xl-6">
+								<input class="form-input" type="email" name="email" id="email" placeholder="Email" required>
+							</div>
+							<!-- Subject -->
+							<div class="input-div col-xl-12">
+								<input class="form-input" type="text" name="subject" id="subject" placeholder="Subject" required>
+							</div>
+							<!-- Message -->
+							<div class="input-div col-xl-12">
+								<textarea class="form-input" type="textarea" name="message" id="message" placeholder="Message" maxlength=3000 rows=7 required></textarea>
+							</div>
+		
+							<div class="btn-div offset-md-9 col-md-3">
+								<button class="submit-btn g-recaptcha" data-sitekey="6LdqsHsfAAAAAPnDhGJqDaxnkbdI_I-Pjl5JYlZA" data-callback='onSubmit' type="submit" name="action" id="submit">Send message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>			
+		</div>
+
+		<section id="footer"></section>
+	</div>
+</body>
+</html>

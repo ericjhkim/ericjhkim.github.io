@@ -1,0 +1,244 @@
+
+#background{
+    background: repeating-linear-gradient(white, white 35px, rgb(216, 216, 255) 35px, rgb(216, 216, 255) 36px);
+    /* position: relative; */
+    width: 100vw;
+    margin: auto;
+    min-height: 70vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 3px;
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px){
+    #background{
+        width:70vw;
+    }
+}
+
+#heading{
+    background-color: rgb(255, 255, 255);
+    min-height: 30vh;
+}
+
+body{
+    background-color: rgb(0, 0, 12);
+    font-family: 'Fira Code', monospace;
+}
+
+h1{
+    font-size: 3em;
+}
+@media (min-width: 768px){
+    h1{
+        font-size: 4em;
+    }
+}
+
+.l-margin{
+    /* position: relative; */
+    width: 3%;
+    float: left;
+    border-right: 2px solid rgba(255, 192, 203, 0.75);
+    flex: auto;
+}
+
+.r-margin{
+    /* position: relative; */
+    width: 3%;
+    float: right;
+    flex: auto;
+}
+
+.page{
+    width: 94%;
+    flex: auto;
+    /* overflow: auto; */
+}
+
+.image{
+    max-width: 60%;
+}
+
+.image-steps{
+    max-width: 40%;
+}
+
+.widget-title {
+    display: flex;
+    align-items: center;
+}
+
+.widget-title:before {
+    content: '[';
+    color: #686868;
+    font-size: 4em;
+    text-align: right;
+    padding-right: 0.1em;
+}
+
+.widget-title:after {
+    content: ']';
+    color: #686868;
+    font-size: 4em;
+    text-align: left;
+    padding-left: 0.1em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.carousel-card{
+    width: 100%;
+}
+@media (min-width: 768px){
+    .carousel-card{
+        width: 75%;
+    }
+}
+
+.carousel-indicators li {
+    /* background-color: #999 !important; */
+    background-color: black !important;
+}
+  
+.carousel-indicators .active {
+    background-color: rgb(255, 153, 0) !important;
+}
+
+.carousel-item{
+    min-height: 12vh;
+}
+
+.table-card{
+    width: 100%;
+}
+@media (min-width: 1366px){
+    .table-card{
+        width: 60%;
+    }
+}
+
+.order-btn{
+    min-width: 40vw;
+}
+
+.form-input{
+    width: 100%;
+}
+
+.text-fade{
+    color: gray;
+}
+
+.submit-btn{
+    min-width: 10vw;
+}
+.submit-btn:hover span{
+    display: none;
+}
+.submit-btn:hover:before {
+    content: "👻";
+}
+
+.orderpg-background{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2px;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.card{
+    border-style:solid;
+    border-color:rgb(238, 238, 238);
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+a:hover{
+    color: inherit;
+}
+
+.footer-box{
+    border-top: 2px solid black;
+}
+
+/* 1. Enable smooth scrolling */
+html {
+	scroll-behavior: smooth;
+}
+
+.spacer{
+    min-height: 15vh;
+}
+
+.inline-img {
+    max-width: 1em;
+}
+
+.footer-link:hover{
+    color:rgb(0, 0, 255)
+}
+
+.headshot{
+    max-width: 200px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.headshot-main{
+    max-width: 250px;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.card-payment{
+    border-style:solid;
+    border-width: 3px;
+    border-color:rgb(0, 0, 0);
+    background-color: white;
+    /* min-height: 300px; */
+    overflow-wrap: break-word;
+}
+
+.image-crypto{
+    max-width: 180px;
+}
+
+@media (hover: hover) and (pointer: fine) and (min-width: 1024px){
+    .image-qr{
+        visibility: hidden;
+        max-width: 200px;
+    }
+    .card-payment:hover .image-qr{
+        visibility: visible;
+        max-width: 200px;
+        /* opacity: 1;
+        transition: all 1s; */
+    }    
+}
+
+.image-qr{
+    visibility: hidden;
+    max-width: 200px;
+}
+
+.crypto-address input{
+    text-align: center;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.copy-btn{
+    max-width: 200px;
+}
+
+.etx{
+    max-width:300px;
+}
