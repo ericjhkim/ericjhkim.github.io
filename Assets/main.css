@@ -476,15 +476,21 @@ input:focus, textarea:focus {
 	width: 100%;
 	background-color: var(--myblue2);
 	position: relative;
+	z-index: 100;
 }
 #mobilenav .topbar #mobilenav-tog{
 	position: absolute;
 	height: 100%;
+	display: flex;
+	justify-content: center;
 }
 #mobilenav .topbar #mobilenav-tog img{
-	max-height: 100%;
-	padding: 10px 0 10px 8px;
-	/* margin-left: 5px; */
+	max-height: 80%;
+	padding: 5px;
+	/* display: block; */
+	margin: auto;
+	transition-duration: 0.3s;
+	transform-origin: center;
 }
 #mobilenav .topbar #logo{
 	height: 100%;
@@ -492,13 +498,24 @@ input:focus, textarea:focus {
 }
 #mobilenav .topbar #logo img{
 	max-height: 100%;
-	padding: 8px;
+	padding: 5px;
 	/* margin-right: 5px; */
 }
 #mobilenav #shutter{
 	background-color: var(--myblue2);
 	/* opacity: 0; */
 	display: none;
+
+	position: relative;
+	top: -100%;
+	width: 100%;
+	transition-duration: 0.3s;
+
+	/* position: fixed;
+	top: -100%; */
+	/* bottom: 0;
+	left: 0;
+	right: 0; */
 	/* transition: opacity 500ms ease, visibility 500ms ease; */
 }
 /* #mobilenav #shutter .active{
@@ -518,4 +535,16 @@ input:focus, textarea:focus {
 
 #counter{
 	color: var(--mygold);
+}
+
+#mobilesocials{
+	display: none;
+}
+@media only screen and (max-width: 992px) {
+	#mobilesocials {
+		display: block;
+	}
+}
+#mobilesocials div{
+	padding-bottom: 1em;
 }

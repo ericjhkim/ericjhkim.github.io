@@ -55,22 +55,28 @@ function displayAbstract(i_pub)
 
 // Show/hide mobile menu
 function openMobileNav() {
-    var x = document.getElementById("shutter");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var shutter = document.getElementById("shutter");
+    var icon = document.getElementById("mobilenav-tog-icon");
+    // Hide
+    if (shutter.style.top === "0%") {
+        shutter.style.top = "-100%";
+        icon.style.transform = "rotate(0deg)";
+    // Show
     } else {
-        x.style.display = "block";
+        shutter.style.display = "block";
+        shutter.style.top = "0%";
+        icon.style.transform = "rotate(90deg)";
     }
     return false;
 }
 
-window.addEventListener('mouseup', function(event){
-	var box = document.getElementById('shutter');
-    var toggle = document.getElementById('mobilenav-tog');
-	if (event.target != box && event.target.parentNode != box && event.target.parentNode != toggle){
-        box.style.display = 'none';
-    }
-});
+// window.addEventListener('mouseup', function(event){
+// 	var box = document.getElementById('shutter');
+//     var toggle = document.getElementById('mobilenav-tog');
+// 	if (event.target != box && event.target.parentNode != box && event.target.parentNode != toggle){
+//         box.style.display = 'none';
+//     }
+// });
 
 // Change about image on hover
 function onHover(dir)

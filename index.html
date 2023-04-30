@@ -28,8 +28,8 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<script src="Assets/main.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<script src="Assets/main.js" type="text/javascript"></script>
 	<script> 
 		$(function(){
 			$("#footer").load("Assets/footer.html"); 
@@ -55,7 +55,7 @@
 		<div id="mobilenav">
 			<div class="topbar">
 				<a href="#!" id="mobilenav-tog" onclick="openMobileNav()">
-					<img src="img/icon_hamburger.png" alt="">
+					<img id="mobilenav-tog-icon" src="img/icon_hamburger.png" alt="">
 				</a>
 				<a href="#" id="logo">
 					<img src="img/mobilenavlogo.png" alt="">
@@ -68,7 +68,7 @@
 				<a href="#projects" onclick="openMobileNav()"><span class="num">04. </span>Projects</a>
 				<a href="#awards" onclick="openMobileNav()"><span class="num">05. </span>Awards</a>
 				<a href="#contact" onclick="openMobileNav()"><span class="num">06. </span>Contact</a>
-		  	</div>
+			</div>
 		</div>
 
 		<div id="content">
@@ -466,8 +466,30 @@
 						You can <a href="mailto: ericjihkim@gmail.com" class="text-href">email me</a> directly or message me on social media.
 					</div>
 				</div>
+				<div id="mobilesocials">
+					<div>
+						<a href="https://www.linkedin.com/in/eric-jihun-kim-220889213" target="_blank" rel="noopener noreferrer">
+							<img src="img/icon_linkedin.png" alt="linkedin" class="icon-socials">
+							<span>LinkedIn</span>
+						</a>
+					</div>
+					<div>
+						<a href="https://www.researchgate.net/profile/Eric_Kim9" target="_blank" rel="noopener noreferrer">
+							<img src="img/icon_researchgate.png" alt="researchgate" class="icon-socials">
+							<span>ResearchGate</span>
+						</a>
+					</div>
+					<div>
+						<a href="https://github.com/ericjhkim" target="_blank" rel="noopener noreferrer">
+							<img src="img/icon_github.png" alt="github" class="icon-socials">
+							<span>GitHub</span>
+						</a>
+					</div>
+				</div>
 			</section>			
 		</div>
+
+
 		<section id="footer"></section>
 	</div>
 </body>
