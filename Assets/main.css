@@ -162,6 +162,10 @@ ul{
 .timeline-content h3 {
 	color: var(--mywhite);
 	font-size: 18px;
+}
+.timeline-content h4 {
+	color: rgb(207, 207, 207);
+	font-size: 16px;
 	margin-bottom: 1.5em;
 }
 .timeline-content p {
