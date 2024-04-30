@@ -379,25 +379,15 @@ input:focus, textarea:focus {
     position: fixed;
     top: 0;
     left: 0;
-    width: 145px;
+    width: 150px;
     height: 100%;
     transition: all 0.5s ease;
 	text-align: center;
 	color: var(--mywhite2);
 	display: flex;
 	flex-direction: column;
-	/* z-index: 1000;
-	position: fixed;
-	left: 250px;
-	width: 250px;
-	height: 100%;
-	margin-left: -250px;
-	overflow-y: auto;
-	background: #37474F;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease; */
+	border-right: 2px solid rgb(0, 30, 59);
+	/* box-shadow: 0px 0px 10px 10px var(--myblue2); */
 }
 #sidebar .header{
 	height: 130px;
